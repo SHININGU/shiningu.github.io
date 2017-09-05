@@ -307,9 +307,9 @@ var Color = (function () {
             newH += 1; 
             newH = newH - Math.floor(newH);
 
-            var newS = Math.min(100, Math.max(0, transformedColor.hsl.S + transform.sDiff));
+            var newS = Math.min(1, Math.max(0, transformedColor.hsl.S + transform.sDiff));
 
-            var newL = Math.min(100, Math.max(0, transformedColor.hsl.L + transform.lDiff));
+            var newL = Math.min(1, Math.max(0, transformedColor.hsl.L + transform.lDiff));
 
             transformedColor.setHSL(newH, newS, newL);
 
